@@ -1,7 +1,7 @@
 # wkdir = data/date
 
 from datetime import datetime
-# import schedule
+import schedule
 import time
 from fetch_sources import fetch_then_save_raw_symbols
 from merge_files import merge_concat_all, join_with_ICB100
@@ -38,8 +38,9 @@ def job():
 # test
 job()
 
-# schedule.every().day.at("22:00").do(job)  # Chạy lúc 10 giờ tối mỗi ngày
+schedule.every().day.at("22:00").do(job)  # Chạy lúc 10 giờ tối mỗi ngày
 
-# while True:
-#     schedule.run_pending()  # Chạy các tác vụ đã lên lịch
-#     time.sleep(60) # Check kẻo lỡ lệch phát là ăn cám đấy
+while True:
+    schedule.run_pending()  # Chạy các tác vụ đã lên lịch
+    time.sleep(60) # Check kẻo lỡ lệch phát là ăn cám đấy
+
