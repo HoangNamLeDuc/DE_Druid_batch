@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  automation:
+    build: .
+    container_name: python_automation
+    volumes:
+      - ./data:/app/data        # map thư mục data của project
+      - ./output:/app/output    # map thư mục output do main.py sinh ra
+    working_dir: /app
+    command: python main.py
