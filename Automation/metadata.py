@@ -40,8 +40,8 @@ prefix_map = {
     'GDTuDoanh': 'TD_'
 }
 #2.2 Dữ liệu mặc định cho từng nguồn
-default_date = datetime.today().strftime('%d/%m/%Y')
-# default_date = '01/01/2022'
+# default_date = datetime.today().strftime('%d/%m/%Y')
+default_date = '01/01/2022'
 default_data_dict = {
     'PriceHistory': [{
         'Ngay': default_date,
@@ -91,3 +91,11 @@ default_data_dict = {
         'GtBan': 0
     }]
 }
+
+def change_default_dict(default_date):
+    for key in default_data_dict:
+        for entry in default_data_dict[key]:
+            if 'Ngay' in entry:
+                entry['Ngay'] = default_date
+            if 'Date' in entry:
+                entry['Date'] = default_date
