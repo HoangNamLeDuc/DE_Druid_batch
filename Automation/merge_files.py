@@ -78,6 +78,7 @@ def concat_all(symbols_list, wkdir="data", output_file="merged_stock_data.csv", 
     output_file_path = os.path.join(wkdir, output_file)
     merged_data.to_csv(output_file_path, index=False)
     print(f"Data merged and saved to {output_file_path}")
+    return output_file_path
 
 # Ví dụ sử dụng hàm:
 # concat_all(md.vn100_symbols, wkdir="data", output_file="vn100_stock_data_merged.csv")
@@ -85,5 +86,23 @@ def concat_all(symbols_list, wkdir="data", output_file="merged_stock_data.csv", 
 #3. Merge và Concat mọi thứ lại
 def merge_concat_all(symbols_list, wkdir, output_file="merged_stock_data.csv", to_sort=True):
     load_merge_symbols(symbols_list, wkdir, output_format='csv')
-    concat_all(symbols_list, wkdir, output_file, to_sort)
+    return concat_all(symbols_list, wkdir, output_file, to_sort)
     
+#4. Join với ICB 100
+def join_with_ICB100(file_merged, file_icb='VN100_with_ICB.csv', wkdir='data'):
+    # Load dữ liệu từ các file CSV
+    df_icb = pd.read_csv(file_icb)
+    df_merged = pd.read_csv(file_merged)
+
+    # Merge theo cột 'symbol'
+    df_joined = pd.merge(df_merged, df_icb, on="symbol", how="inner")
+
+    # Kiểm tra kết quả
+    # print(df_joined.head())
+
+    # Lưu kết quả vào một file mới
+    output_file = "vn100_stock_data_merged_with_ICB.csv"
+    output_file_path = os.path.join(wkdir, output_file)
+    df_joined.to_csv(output_file_path, index=False)
+
+    print(f"Data joined and saved to {output_file_path}")

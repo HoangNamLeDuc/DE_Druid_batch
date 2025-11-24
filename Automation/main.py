@@ -1,10 +1,10 @@
 # wkdir = data/date
 
 from datetime import datetime
-import schedule
+# import schedule
 import time
 from fetch_sources import fetch_then_save_raw_symbols
-from merge_files import merge_concat_all
+from merge_files import merge_concat_all, join_with_ICB100
 import metadata as md
 
 # Chạy feed dữ liệu đầu:
@@ -14,8 +14,8 @@ def init_data():
     md.change_default_dict(start_date) #Cập nhật lại metadata
     wkdir = f"data/init"  
     fetch_then_save_raw_symbols(md.vn100_symbols, start_date, end_date, page_size=1000, wkdir=wkdir, output_format='csv', sources=md.sources)
-    merge_concat_all(md.vn100_symbols, wkdir, output_file="merged_stock_data.csv")
-
+    output_file_path = merge_concat_all(md.vn100_symbols, wkdir, output_file="merged_stock_data.csv")
+    join_with_ICB100(file_merged=output_file_path, wkdir=wkdir)
 
 # Chạy mỗi đêm
 # parallel đc không?
@@ -32,13 +32,14 @@ def job():
     end_date = today_date
     wkdir = f"data/{today_date}"  
     fetch_then_save_raw_symbols(md.vn100_symbols, start_date, end_date, page_size=1000, wkdir=wkdir, output_format='csv', sources=md.sources)
-    merge_concat_all(md.vn100_symbols, wkdir, output_file="merged_stock_data.csv")
+    output_file_path = merge_concat_all(md.vn100_symbols, wkdir, output_file="merged_stock_data.csv")
+    join_with_ICB100(file_merged=output_file_path, wkdir=wkdir)
 
 # test
 job()
 
-schedule.every().day.at("22:00").do(job)  # Chạy lúc 10 giờ tối mỗi ngày
+# schedule.every().day.at("22:00").do(job)  # Chạy lúc 10 giờ tối mỗi ngày
 
-while True:
-    schedule.run_pending()  # Chạy các tác vụ đã lên lịch
-    time.sleep(60) # Check kẻo lỡ lệch phát là ăn cám đấy
+# while True:
+#     schedule.run_pending()  # Chạy các tác vụ đã lên lịch
+#     time.sleep(60) # Check kẻo lỡ lệch phát là ăn cám đấy
