@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 import os 
 import metadata as md
+from datetime import datetime
 
 
 #3 Lấy thông tin về giao dịch trong ngày của Công ty, xuất ra csv
@@ -24,10 +25,12 @@ def get_stock_data(symbol, start_date, end_date, page_index=1, page_size=20, fro
     #   start_date=''
     #   end_date=''
     url = f"https://cafef.vn/du-lieu/Ajax/PageNew/DataHistory/{from_source}.ashx?Symbol={symbol}&StartDate={start_date}&EndDate={end_date}&PageIndex={page_index}&PageSize={page_size}"
-    
+    # print(url)
+
     # Gửi yêu cầu GET và nhận dữ liệu JSON
     response = requests.get(url)
     data = response.json()
+    # print(data)
     stock_data = []
     # Trích xuất dữ liệu từ JSON (theo cấu trúc bạn cung cấp)
     if(from_source == "GDTuDoanh"):
@@ -83,42 +86,8 @@ def json_to_dataframe(symbol, stock_data, from_source="PriceHistory"):
     
     return df
 
-#3.3 ETL Task, Hàm để chuyển dữ liệu JSON thành DataFrame
-def json_to_dataframe(symbol, stock_data, from_source="PriceHistory"):
-    listOfField = md.source_columns[from_source]
-    prefix = md.prefix_map[from_source]
-    
-    # Chuyển dữ liệu thành DataFrame
-    df = pd.DataFrame(stock_data)
-    # Kiểm tra nếu DataFrame là empty
-    if df.empty:
-        # Nếu dữ liệu trống, tạo một bảng dữ liệu mặc định
-        print(f"Warning: No data available for {symbol}. Creating default data.")
-        # Tạo DataFrame với dữ liệu mặc định
-        default_data = md.default_data_dict[from_source]
-        # Nếu là GDTuDoanh thì cẩn thận
-        if(from_source == "GDTuDoanh"):
-            default_data[0]['Symbol'] = symbol
-        df = pd.DataFrame(default_data)
 
-    df = df[listOfField]
-
-    # Làm task Transform 1 chút trước khi lưu
-    # Thống nhất field name Tiếng Việt
-    # Nếu có col 'Date', chuyển nó thành 'Ngay'
-    if 'Date' in df.columns:
-        df = df.rename(columns={'Date': 'Ngay'})  
-        
-    # Duyệt qua tất cả cột và thêm tiền tố (prefix) vào tên cột
-    df = df.rename(columns={col: prefix + col if col != 'Ngay' else col for col in df.columns})
-
-    # Chuyển cột 'Ngay' sang định dạng ngày tháng
-    df['Ngay'] = pd.to_datetime(df['Ngay'], format='%d/%m/%Y')
-    
-    return df
-
-
-#3.4 Hàm để lấy và lưu dữ liệu từ API
+#3.3 Hàm để lấy và lưu dữ liệu từ API
 def save_stock_data(symbol, start_date, end_date, page_size=100, wkdir='data', output_format='csv', from_source="PriceHistory"):
     all_data = []
     page_index = 1
@@ -135,6 +104,14 @@ def save_stock_data(symbol, start_date, end_date, page_size=100, wkdir='data', o
 
     # Chuyển dữ liệu thành DataFrame
     df = json_to_dataframe(symbol, all_data, from_source)
+    # print(f'________________{start_date}______________________')
+
+    # Lọc dữ liệu trong khoảng start_date và end_date
+    df['Ngay'] = pd.to_datetime(df['Ngay'], format='%d/%m/%Y')
+    start_date = datetime.strptime(start_date, '%m/%d/%Y')
+    end_date = datetime.strptime(end_date, '%m/%d/%Y')
+    df = df[(df['Ngay'] >= start_date) & (df['Ngay'] <= end_date)]
+
     
     # Lưu dữ liệu vào file theo định dạng yêu cầu
     # Tạo thư mục để lưu dữ liệu (nếu chưa tồn tại)
@@ -153,7 +130,7 @@ def save_stock_data(symbol, start_date, end_date, page_size=100, wkdir='data', o
 
 # save_stock_data('HPG', '01/01/2022', '11/23/2025', page_size=1000, wkdir='data', output_format='csv', from_source=md.sources[3])
 
-#3.5 Chạy để fetch và lưu cả 4 sources cho 1 symbol
+#3.4 Chạy để fetch và lưu cả 4 sources cho 1 symbol
 def fetch_then_save_raw(symbol, start_date, end_date, page_size=100, wkdir='data', output_format='csv', sources=md.sources):
     for source in sources:
         save_stock_data(symbol, start_date, end_date, page_size, wkdir=wkdir, output_format='csv', from_source=source)
