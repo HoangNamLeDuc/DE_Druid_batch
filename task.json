@@ -1,0 +1,184 @@
+{
+  "type": "index_parallel",
+  "spec": {
+    "ioConfig": {
+      "type": "index_parallel",
+      "inputSource": {
+        "type": "local",
+        "baseDir": "/opt/data",
+        "filter": "vn100_stock_data_merged_with_ICB_2.csv"
+      },
+      "inputFormat": {
+        "type": "csv",
+        "findColumnsFromHeader": true
+      },
+      "appendToExisting": true
+    },
+    "tuningConfig": {
+      "type": "index_parallel",
+      "partitionsSpec": {
+        "type": "dynamic",
+        "maxRowsPerSegment": 500,
+        "maxTotalRows": 200000
+      }
+    },
+    "dataSchema": {
+      "dataSource": "inline_data",
+      "timestampSpec": {
+        "column": "Ngay",
+        "format": "auto"
+      },
+      "dimensionsSpec": {
+        "dimensions": [
+          "symbol",
+          {
+            "type": "long",
+            "name": "LS_GiaDieuChinh"
+          },
+          {
+            "type": "long",
+            "name": "LS_GiaDongCua"
+          },
+          {
+            "type": "long",
+            "name": "LS_ThayDoi"
+          },
+          {
+            "type": "long",
+            "name": "LS_KhoiLuongKhopLenh"
+          },
+          {
+            "type": "long",
+            "name": "LS_GiaTriKhopLenh"
+          },
+          {
+            "type": "long",
+            "name": "LS_KLThoaThuan"
+          },
+          {
+            "type": "long",
+            "name": "LS_GtThoaThuan"
+          },
+          {
+            "type": "long",
+            "name": "LS_GiaMoCua"
+          },
+          {
+            "type": "long",
+            "name": "LS_GiaCaoNhat"
+          },
+          {
+            "type": "long",
+            "name": "LS_GiaThapNhat"
+          },
+          "DL_ThayDoi",
+          {
+            "type": "long",
+            "name": "DL_SoLenhMua"
+          },
+          {
+            "type": "long",
+            "name": "DL_KLDatMua"
+          },
+          {
+            "type": "long",
+            "name": "DL_KLTB1LenhMua"
+          },
+          {
+            "type": "long",
+            "name": "DL_SoLenhDatBan"
+          },
+          {
+            "type": "long",
+            "name": "DL_KLDatBan"
+          },
+          {
+            "type": "long",
+            "name": "DL_KLTB1LenhBan"
+          },
+          "DL_ChenhLechKL",
+          {
+            "type": "long",
+            "name": "KN_KLGDRong"
+          },
+          {
+            "type": "long",
+            "name": "KN_GTDGRong"
+          },
+          {
+            "type": "long",
+            "name": "KN_ThayDoi"
+          },
+          {
+            "type": "long",
+            "name": "KN_KLMua"
+          },
+          {
+            "type": "long",
+            "name": "KN_GtMua"
+          },
+          {
+            "type": "long",
+            "name": "KN_KLBan"
+          },
+          {
+            "type": "long",
+            "name": "KN_GtBan"
+          },
+          {
+            "type": "long",
+            "name": "KN_RoomConLai"
+          },
+          {
+            "type": "long",
+            "name": "KN_DangSoHuu"
+          },
+          "TD_Symbol",
+          {
+            "type": "long",
+            "name": "TD_KLcpMua"
+          },
+          {
+            "type": "long",
+            "name": "TD_KlcpBan"
+          },
+          {
+            "type": "long",
+            "name": "TD_GtMua"
+          },
+          {
+            "type": "long",
+            "name": "TD_GtBan"
+          },
+          "group",
+          "organ_name",
+          "icb_name3",
+          "icb_name2",
+          "icb_name4",
+          "com_type_code",
+          {
+            "type": "long",
+            "name": "icb_code1"
+          },
+          {
+            "type": "long",
+            "name": "icb_code2"
+          },
+          {
+            "type": "long",
+            "name": "icb_code3"
+          },
+          {
+            "type": "long",
+            "name": "icb_code4"
+          }
+        ]
+      },
+      "granularitySpec": {
+        "queryGranularity": "none",
+        "rollup": false,
+        "segmentGranularity": "month"
+      }
+    }
+  }
+}
