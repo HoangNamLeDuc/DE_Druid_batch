@@ -1,0 +1,101 @@
+symbol,group,organ_name,icb_name3,icb_name2,icb_name4,com_type_code,icb_code1,icb_code2,icb_code3,icb_code4
+ACB,VN30,Ngân hàng Thương mại Cổ phần Á Châu,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+BCM,VN30,Tập đoàn Đầu tư và Phát triển Công nghiệp Becamex - CTCP,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+BID,VN30,Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+CTG,VN30,Ngân hàng Thương mại Cổ phần Công thương Việt Nam,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+DGC,VN30,Công ty Cổ phần Tập đoàn Hóa chất Đức Giang,Hóa chất,Hóa chất,"Sản phẩm hóa dầu, Nông dược & Hóa chất khác",CT,1000,1300,1350,1357
+FPT,VN30,Công ty Cổ phần FPT,Phần mềm & Dịch vụ Máy tính,Công nghệ Thông tin,Phần mềm,CT,9000,9500,9530,9537
+GAS,VN30,Tổng Công ty Khí Việt Nam - Công ty Cổ phần,Nước & Khí đốt,"Điện, nước & xăng dầu khí đốt",Phân phối xăng dầu & khí đốt,CT,7000,7500,7570,7573
+GVR,VN30,Tập đoàn Công nghiệp Cao su Việt Nam - Công ty Cổ phần,Hóa chất,Hóa chất,"Nhựa, cao su & sợi",CT,1000,1300,1350,1353
+HDB,VN30,Ngân hàng Thương mại Cổ phần Phát Triển Thành phố Hồ Chí Minh,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+HPG,VN30,Công ty Cổ phần Tập đoàn Hòa Phát,Kim loại,Tài nguyên Cơ bản,Thép và sản phẩm thép,CT,1000,1700,1750,1757
+LPB,VN30,Ngân hàng Thương mại Cổ phần Lộc Phát Việt Nam,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+MBB,VN30,Ngân hàng Thương mại Cổ phần Quân đội,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+MSN,VN30,Công ty Cổ phần Tập đoàn Masan,Sản xuất thực phẩm,Thực phẩm và đồ uống,Thực phẩm,CT,3000,3500,3570,3577
+MWG,VN30,Công ty Cổ phần Đầu tư Thế Giới Di Động,Bán lẻ,Bán lẻ,Phân phối hàng chuyên dụng,CT,5000,5300,5370,5379
+PLX,VN30,Tập đoàn Xăng dầu Việt Nam,Sản xuất Dầu khí,Dầu khí,Sản xuất và Khai thác dầu khí,CT,0001,0500,0530,0533
+SAB,VN30,Tổng Công ty Cổ phần Bia - Rượu - Nước Giải khát Sài Gòn,Bia và đồ uống,Thực phẩm và đồ uống,Sản xuất bia,CT,3000,3500,3530,3533
+SHB,VN30,Ngân hàng Thương mại Cổ phần Sài Gòn – Hà Nội,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+SSB,VN30,Ngân hàng Thương mại Cổ phần Đông Nam Á,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+SSI,VN30,Công ty Cổ phần Chứng khoán SSI,Dịch vụ tài chính,Dịch vụ tài chính,Môi giới chứng khoán,CK,8000,8700,8770,8777
+STB,VN30,Ngân hàng Thương mại Cổ phần Sài Gòn Thương Tín,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+TCB,VN30,Ngân hàng Thương mại Cổ phần Kỹ thương Việt Nam,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+TPB,VN30,Ngân hàng Thương mại Cổ phần Tiên Phong,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+VCB,VN30,Ngân hàng Thương mại Cổ phần Ngoại thương Việt Nam,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+VHM,VN30,Công ty Cổ phần Vinhomes,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+VIB,VN30,Ngân hàng Thương mại Cổ phần Quốc tế Việt Nam,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+VIC,VN30,Tập đoàn Vingroup - Công ty CP,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+VJC,VN30,Công ty Cổ phần Hàng không Vietjet,Du lịch & Giải trí,Du lịch và Giải trí,Hàng không,CT,5000,5700,5750,5751
+VNM,VN30,Công ty Cổ phần Sữa Việt Nam,Sản xuất thực phẩm,Thực phẩm và đồ uống,Thực phẩm,CT,3000,3500,3570,3577
+VPB,VN30,Ngân hàng Thương mại Cổ phần Việt Nam Thịnh Vượng,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+VRE,VN30,Công ty Cổ phần Vincom Retail,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+ANV,VNMidCap,Công ty Cổ phần Nam Việt,Sản xuất thực phẩm,Thực phẩm và đồ uống,Nuôi trồng nông & hải sản,CT,3000,3500,3570,3573
+BMP,VNMidCap,Công ty Cổ phần Nhựa Bình Minh,Xây dựng và Vật liệu,Xây dựng và Vật liệu,Vật liệu xây dựng & Nội thất,CT,2000,2300,2350,2353
+BSI,VNMidCap,Công ty Cổ phần Chứng khoán BIDV,Dịch vụ tài chính,Dịch vụ tài chính,Môi giới chứng khoán,CK,8000,8700,8770,8777
+BVH,VNMidCap,Tập đoàn Bảo Việt,Bảo hiểm nhân thọ,Bảo hiểm,Bảo hiểm nhân thọ,BH,8000,8500,8570,8575
+BWE,VNMidCap,Công ty Cổ phần - Tổng công ty Nước - Môi trường Bình Dương,Nước & Khí đốt,"Điện, nước & xăng dầu khí đốt",Nước,CT,7000,7500,7570,7577
+CII,VNMidCap,Công ty Cổ phần Đầu tư Hạ tầng Kỹ thuật Thành phố Hồ Chí Minh,Xây dựng và Vật liệu,Xây dựng và Vật liệu,Xây dựng,CT,2000,2300,2350,2357
+CMG,VNMidCap,Công ty Cổ phần Tập đoàn Công nghệ CMC,Phần mềm & Dịch vụ Máy tính,Công nghệ Thông tin,Dịch vụ Máy tính,CT,9000,9500,9530,9533
+CTD,VNMidCap,Công ty Cổ phần Xây dựng Coteccons,Xây dựng và Vật liệu,Xây dựng và Vật liệu,Xây dựng,CT,2000,2300,2350,2357
+CTR,VNMidCap,Tổng Công ty Cổ phần Công trình Viettel,Xây dựng và Vật liệu,Xây dựng và Vật liệu,Xây dựng,CT,2000,2300,2350,2357
+CTS,VNMidCap,Công ty Cổ phần Chứng khoán Ngân hàng Công thương Việt Nam,Dịch vụ tài chính,Dịch vụ tài chính,Môi giới chứng khoán,CK,8000,8700,8770,8777
+DBC,VNMidCap,Công ty Cổ phần Tập đoàn Dabaco Việt Nam,Sản xuất thực phẩm,Thực phẩm và đồ uống,Nuôi trồng nông & hải sản,CT,3000,3500,3570,3573
+DCM,VNMidCap,Công ty Cổ phần - Tổng Công ty Phân bón Dầu Khí Cà Mau,Hóa chất,Hóa chất,"Sản phẩm hóa dầu, Nông dược & Hóa chất khác",CT,1000,1300,1350,1357
+DGW,VNMidCap,Công ty Cổ phần Thế Giới Số,Bán lẻ,Bán lẻ,Phân phối hàng chuyên dụng,CT,5000,5300,5370,5379
+DIG,VNMidCap,Tổng Công ty Cổ phần Đầu tư Phát triển Xây dựng,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+DPM,VNMidCap,Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần,Hóa chất,Hóa chất,"Sản phẩm hóa dầu, Nông dược & Hóa chất khác",CT,1000,1300,1350,1357
+DSE,VNMidCap,Công ty Cổ phần Chứng khoán DNSE,Dịch vụ tài chính,Dịch vụ tài chính,Môi giới chứng khoán,CK,8000,8700,8770,8777
+DXG,VNMidCap,Công ty Cổ phần Tập đoàn Đất Xanh,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+DXS,VNMidCap,Công ty Cổ phần Dịch vụ Bất động sản Đất Xanh,Bất động sản,Bất động sản,"Tư Vấn, Định giá, Môi giới Bất động sản",CT,8000,8600,8630,8637
+EIB,VNMidCap,Ngân hàng Thương mại Cổ phần Xuất nhập khẩu Việt Nam,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+EVF,VNMidCap,Công ty Tài chính Tổng hợp Cổ phần Điện Lực,Dịch vụ tài chính,Dịch vụ tài chính,Tài chính cá nhân,NH,8000,8700,8770,8773
+FRT,VNMidCap,Công ty Cổ phần Bán lẻ Kỹ thuật số FPT,Bán lẻ,Bán lẻ,Phân phối hàng chuyên dụng,CT,5000,5300,5370,5379
+FTS,VNMidCap,Công ty Cổ phần Chứng khoán FPT,Dịch vụ tài chính,Dịch vụ tài chính,Môi giới chứng khoán,CK,8000,8700,8770,8777
+GEE,VNMidCap,Công ty Cổ phần Điện lực Gelex,Điện tử & Thiết bị điện,Hàng & Dịch vụ Công nghiệp,Thiết bị điện,CT,2000,2700,2730,2737
+GEX,VNMidCap,Công ty Cổ phần Tập đoàn Gelex,Điện tử & Thiết bị điện,Hàng & Dịch vụ Công nghiệp,Thiết bị điện,CT,2000,2700,2730,2737
+GMD,VNMidCap,Công ty Cổ phần Gemadept,Vận tải,Hàng & Dịch vụ Công nghiệp,"Kho bãi, hậu cần và bảo dưỡng",CT,2000,2700,2770,2777
+HAG,VNMidCap,Công ty Cổ phần Hoàng Anh Gia Lai,Sản xuất thực phẩm,Thực phẩm và đồ uống,Nuôi trồng nông & hải sản,CT,3000,3500,3570,3573
+HCM,VNMidCap,Công ty Cổ phần Chứng khoán Thành phố Hồ Chí Minh,Dịch vụ tài chính,Dịch vụ tài chính,Môi giới chứng khoán,CK,8000,8700,8770,8777
+HDC,VNMidCap,Công ty Cổ phần Phát triển Nhà Bà Rịa Vũng Tàu,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+HDG,VNMidCap,Công ty Cổ phần Tập đoàn Hà Đô,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+HHV,VNMidCap,Công ty Cổ phần Đầu tư Hạ tầng Giao thông Đèo Cả,Xây dựng và Vật liệu,Xây dựng và Vật liệu,Xây dựng,CT,2000,2300,2350,2357
+HSG,VNMidCap,Công ty Cổ phần Tập đoàn Hoa Sen,Kim loại,Tài nguyên Cơ bản,Thép và sản phẩm thép,CT,1000,1700,1750,1757
+HT1,VNMidCap,Công ty Cổ phần Xi măng VICEM Hà Tiên,Xây dựng và Vật liệu,Xây dựng và Vật liệu,Vật liệu xây dựng & Nội thất,CT,2000,2300,2350,2353
+IMP,VNMidCap,Công ty Cổ phần Dược phẩm IMEXPHARM,Dược phẩm,Y tế,Dược phẩm,CT,4000,4500,4570,4577
+KBC,VNMidCap,Tổng Công ty Phát triển Đô thị Kinh Bắc,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+KDC,VNMidCap,Công ty Cổ phần Tập đoàn KIDO,Sản xuất thực phẩm,Thực phẩm và đồ uống,Thực phẩm,CT,3000,3500,3570,3577
+KDH,VNMidCap,Công ty Cổ phần Đầu tư và Kinh doanh nhà Khang Điền,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+KOS,VNMidCap,Công ty Cổ phần KOSY,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+MSB,VNMidCap,Ngân hàng Thương mại Cổ phần Hàng Hải Việt Nam,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+NAB,VNMidCap,Ngân hàng Thương mại Cổ phần Nam Á,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+NKG,VNMidCap,Công ty Cổ phần Thép Nam Kim,Kim loại,Tài nguyên Cơ bản,Thép và sản phẩm thép,CT,1000,1700,1750,1757
+NLG,VNMidCap,Công ty Cổ phần Đầu tư Nam Long,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+NT2,VNMidCap,Công ty Cổ phần Điện lực Dầu khí Nhơn Trạch 2,Sản xuất & Phân phối Điện,"Điện, nước & xăng dầu khí đốt",Sản xuất & Phân phối Điện,CT,7000,7500,7530,7535
+OCB,VNMidCap,Ngân hàng Thương mại Cổ phần Phương Đông,Ngân hàng,Ngân hàng,Ngân hàng,NH,8301,8300,8350,8355
+PAN,VNMidCap,Công ty Cổ phần Tập đoàn PAN,Sản xuất thực phẩm,Thực phẩm và đồ uống,Thực phẩm,CT,3000,3500,3570,3577
+PC1,VNMidCap,Công ty Cổ phần Tập đoàn PC1,Xây dựng và Vật liệu,Xây dựng và Vật liệu,Xây dựng,CT,2000,2300,2350,2357
+PDR,VNMidCap,Công ty Cổ phần Phát triển Bất động sản Phát Đạt,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+PHR,VNMidCap,Công ty Cổ phần Cao su Phước Hòa,Hóa chất,Hóa chất,"Nhựa, cao su & sợi",CT,1000,1300,1350,1353
+PNJ,VNMidCap,Công ty Cổ phần Vàng bạc Đá quý Phú Nhuận,Hàng cá nhân,Hàng cá nhân & Gia dụng,Hàng cá nhân,CT,3000,3700,3760,3767
+POW,VNMidCap,Tổng Công ty Điện lực Dầu khí Việt Nam - CTCP,Sản xuất & Phân phối Điện,"Điện, nước & xăng dầu khí đốt",Sản xuất & Phân phối Điện,CT,7000,7500,7530,7535
+PPC,VNMidCap,Công ty Cổ phần Nhiệt điện Phả Lại,Sản xuất & Phân phối Điện,"Điện, nước & xăng dầu khí đốt",Sản xuất & Phân phối Điện,CT,7000,7500,7530,7535
+PTB,VNMidCap,Công ty Cổ phần Phú Tài,Lâm nghiệp và Giấy,Tài nguyên Cơ bản,Lâm sản và Chế biến gỗ,CT,1000,1700,1730,1733
+PVD,VNMidCap,Tổng Công ty Cổ phần Khoan và Dịch vụ khoan Dầu khí,"Thiết bị, Dịch vụ và Phân phối Dầu khí",Dầu khí,Thiết bị và Dịch vụ Dầu khí,CT,0001,0500,0570,0573
+PVT,VNMidCap,Tổng Công ty Cổ phần Vận tải Dầu khí,Vận tải,Hàng & Dịch vụ Công nghiệp,Vận tải Thủy,CT,2000,2700,2770,2773
+REE,VNMidCap,Công ty Cổ phần Cơ điện Lạnh,Sản xuất & Phân phối Điện,"Điện, nước & xăng dầu khí đốt",Sản xuất & Phân phối Điện,CT,7000,7500,7530,7535
+SBT,VNMidCap,Công ty Cổ phần Thành Thành Công - Biên Hòa,Sản xuất thực phẩm,Thực phẩm và đồ uống,Thực phẩm,CT,3000,3500,3570,3577
+SCS,VNMidCap,Công ty Cổ phần Dịch vụ Hàng hóa Sài Gòn,Du lịch & Giải trí,Du lịch và Giải trí,Hàng không,CT,5000,5700,5750,5751
+SIP,VNMidCap,Công ty Cổ phần Đầu tư Sài Gòn VRG,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+SJS,VNMidCap,Công ty Cổ phần SJ Group,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+SZC,VNMidCap,Công ty Cổ phần Sonadezi Châu Đức,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+TCH,VNMidCap,Công ty Cổ phần Đầu tư Dịch vụ Tài chính Hoàng Huy,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+TLG,VNMidCap,Công ty Cổ phần Tập đoàn Thiên Long,Hàng gia dụng,Hàng cá nhân & Gia dụng,Đồ gia dụng một lần,CT,3000,3700,3720,3724
+VCG,VNMidCap,Tổng Công ty Cổ phần Xuất nhập khẩu và Xây dựng Việt Nam,Xây dựng và Vật liệu,Xây dựng và Vật liệu,Xây dựng,CT,2000,2300,2350,2357
+VCI,VNMidCap,Công ty Cổ phần Chứng khoán Vietcap,Dịch vụ tài chính,Dịch vụ tài chính,Môi giới chứng khoán,CK,8000,8700,8770,8777
+VGC,VNMidCap,Tổng Công ty Viglacera - Công ty Cổ phần,Xây dựng và Vật liệu,Xây dựng và Vật liệu,Vật liệu xây dựng & Nội thất,CT,2000,2300,2350,2353
+VHC,VNMidCap,Công ty Cổ phần Vĩnh Hoàn,Sản xuất thực phẩm,Thực phẩm và đồ uống,Nuôi trồng nông & hải sản,CT,3000,3500,3570,3573
+VIX,VNMidCap,Công ty Cổ phần Chứng khoán VIX,Dịch vụ tài chính,Dịch vụ tài chính,Môi giới chứng khoán,CK,8000,8700,8770,8777
+VND,VNMidCap,Công ty Cổ phần Chứng khoán VNDIRECT,Dịch vụ tài chính,Dịch vụ tài chính,Môi giới chứng khoán,CK,8000,8700,8770,8777
+VPI,VNMidCap,Công ty Cổ phần Phát triển Bất động sản Văn Phú,Bất động sản,Bất động sản,Bất động sản,CT,8000,8600,8630,8633
+VSC,VNMidCap,Công ty Cổ phần Container Việt Nam,Vận tải,Hàng & Dịch vụ Công nghiệp,"Kho bãi, hậu cần và bảo dưỡng",CT,2000,2700,2770,2777
+VTP,VNMidCap,Tổng Công ty Cổ phần Bưu chính Viettel,Vận tải,Hàng & Dịch vụ Công nghiệp,Chuyển phát nhanh,CT,2000,2700,2770,2771
